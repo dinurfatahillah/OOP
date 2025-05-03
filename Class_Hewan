@@ -1,0 +1,24 @@
+#include <iostream>
+
+class Hewan{
+    public:
+    std::string nama;
+    std::string jk;
+    
+    //Constructor
+    Hewan (std::string nm){
+        nama = nm;
+    }
+    
+    //Method
+    void makan (std::string makanan){
+        std::cout << nama << " Memakan " << makanan << "\n";
+    }
+};
+
+int main(){
+    Hewan myHewan("Oyen");
+    myHewan.makan("Ikan");
+    
+    return 0;
+}
