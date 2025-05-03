@@ -1,0 +1,29 @@
+#include <iostream>
+
+class Manusia{
+    public:
+    std::string nama;
+    std::string pekerjaan;
+    std::string jenis_kelamin;
+    
+    Manusia(std::string nm, std::string jk){
+        nama = nm;
+        jenis_kelamin = jk;
+    }
+    
+    void makan (std::string makanan, std::string minuman, int jam){
+        std::cout << nama << " memakan " << makanan << " dan meminum " << minuman << " pada pukul " << jam;
+    }
+};
+
+int main (){
+    Manusia myObject("Adi", "Laki Laki");
+    myObject.makan("Nasi Ayam", "Air Putih", 7);
+    
+    std:: cout << "\n";
+    
+    Manusia myObject2("Asih", "Perempuan");
+    myObject2.makan("Buah", "Jus", 7);
+    
+    return 0;
+}
